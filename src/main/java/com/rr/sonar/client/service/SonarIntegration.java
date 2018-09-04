@@ -36,7 +36,7 @@ public class SonarIntegration {
 
     public SonarIssues getIssues(String projectKey){
 
-        logger.info("Requesting forecast for {}", projectKey);
+        logger.info("Requesting issues for {}", projectKey);
         Map params = new HashMap<String, String>();
         params.put("componentRoots", projectKey);
         URI url = new UriTemplate(conUrl).expand(params);
