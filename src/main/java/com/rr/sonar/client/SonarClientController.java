@@ -21,7 +21,7 @@ public class SonarClientController {
     }
 
     @RequestMapping("/issues/{projectKey}")
-    public SonarIssues getWeatherForecast(@PathVariable String projectKey) {
+    public SonarIssues getIssues(@PathVariable String projectKey) {
 
         return this.service.getIssues(projectKey);
     }
